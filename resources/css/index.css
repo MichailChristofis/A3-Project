@@ -1,300 +1,551 @@
-@font-face {
-  font-family: "Rubik";
-  src: url('../fonts/Rubik-VariableFont_wght.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: "Varela Round";
-  src: url('../fonts/VarelaRound-Regular.ttf') format('truetype'),
-}
-
-*{
-  font-family: "Varela Round", serif;
-  font-family: "Rubik", sans-serif;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-/*Website body*/
-html, body {
-  height: 100%;
-}
-
-/*Style the body*/
 body {
-  background-color: #FFFFFF;
-  display: flex;
-  flex-direction: column;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+}
+.body1 {
+	background: url(background.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+.pad {
+	padding: 10px;
+}
+footer {
+	width: 100%;
+}
+h3 {
+	padding-left: 5px;
+}
+.col {
+	float: left;
+	width: 100%;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+.align-im {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.im1 {
+	display: block;
+}
+.im2 {
+	display: block;
+}
+.im3 {
+	display: block;
+}
+.im4 {
+	display: block;
+}
+.title {
+	text-align: center;
+	font-size: 50px;
+	text-decoration: underline;
+	margin-bottom: 30px;
+}
+.secondary_image {
+	width: 30%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+table,
+th,
+td {
+	border: 1px solid black;
+}
+.spacebelow {
+	margin-bottom: 18px;
+}
+.ex {
+	margin-left: 20px;
+}
+.adjust {
+	margin-bottom: 100px;
+}
+.ba {
+	background-color: blue;
+	width: 100%;
+	height: 100px;
+	margin-top: -10px;
+}
+.theimage {
+	width: 100%;
+	height: auto;
+	margin-top: -10px;
+}
+.drop {
+	width: 30px;
+	height: auto;
+	visibility: hidden;
+}
+.link {
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	line-height: 100px;
+	font-size: 20px;
+	margin-left: 1px;
+}
+.link:hover {
+	background-color: green;
+}
+.link:hover + .drop {
+	visibility: visible;
+}
+.bluelink {
+	text-decoration: none;
+	color: blue;
+	font-size: 15px;
+	margin-left: 1px;
+}
+.top {
+	float: left;
+	width: 100%;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+@media screen and (max-width: 1000px) {
+	.link {
+		text-decoration: none;
+		color: white;
+		text-align: center;
+		line-height: 100px;
+		font-size: 15px;
+		margin-left: 1px;
+	}
+	.top {
+		float: left;
+		width: 100%;
+		padding-right: 0px;
+		box-sizing: border-box;
+	}
+	.drop {
+		width: 20px;
+	}
+}
+@media screen and (max-width: 700px) {
+	.link {
+		text-decoration: none;
+		color: white;
+		text-align: center;
+		line-height: 100px;
+		font-size: 12px;
+		margin-left: 1px;
+	}
+	.drop {
+		width: 15px;
+	}
+}
+@media screen and (max-width: 550px) {
+	.link {
+		text-decoration: none;
+		color: white;
+		text-align: center;
+		line-height: 100px;
+		font-size: 9px;
+		margin-left: 1px;
+	}
+	.drop {
+		width: 10px;
+	}
+}
+.banner3 {
+	opacity: 0;
+}
+.banner4 {
+	opacity: 0;
+}
+.banner5 {
+	opacity: 0;
+}
+@media screen and (min-width: 1024px) {
+	.banner1 {
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.65);
+		width: calc(25% - 20px);
+		opacity: 1;
+	}
+	.banner2 {
+		position: absolute;
+		background-color: rgba(255, 255, 255, 0.65);
+		margin-left: calc(25%);
+		width: calc(25% - 20px);
+		opacity: 1;
+	}
+	.banner6 {
+		position: absolute;
+		background-color: rgba(225, 225, 225, 0.65);
+		margin-left: calc(50%);
+		width: calc(50% - 20px);
+		opacity: 1;
+	}
+}
+.head {
+	width: 20%;
+}
+.col-xs-11 {
+	width: 91.662%;
+}
+.col-xs-10 {
+	width: 83.332%;
+}
+.col-xs-9 {
+	width: 75%;
+}
+.col-xs-8 {
+	width: 66.662%;
+}
+.col-xs-7 {
+	width: 58.331%;
+}
+.col-xs-6 {
+	width: 50%;
+}
+.col-xs-5 {
+	width: 41.662%;
+}
+.col-xs-4 {
+	width: 33.332%;
+}
+.col-xs-3 {
+	width: 25%;
+}
+.col-xs-2 {
+	width: 16.662%;
+}
+.col-xs-20 {
+	width: 20%;
+}
+.col-xs-1 {
+	width: 8.3323%;
+}
+@media screen and (min-width: 768px) {
+	.col-s-11 {
+		width: 91.662%;
+	}
+	.col-s-10 {
+		width: 83.332%;
+	}
+	.col-s-9 {
+		width: 75%;
+	}
+	.col-s-8 {
+		width: 66.662%;
+	}
+	.col-s-7 {
+		width: 58.331%;
+	}
+	.col-s-6 {
+		width: 50%;
+	}
+	.col-s-5 {
+		width: 41.662%;
+	}
+	.col-s-4 {
+		width: 33.332%;
+	}
+	.col-s-3 {
+		width: 25%;
+	}
+	.col-s-2 {
+		width: 16.662%;
+	}
+	.col-s-1 {
+		width: 8.3323%;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.col-md-11 {
+		width: 91.662%;
+	}
+	.col-md-10 {
+		width: 83.332%;
+	}
+	.col-md-9 {
+		width: 75%;
+	}
+	.col-md-8 {
+		width: 66.662%;
+	}
+	.col-md-7 {
+		width: 58.331%;
+	}
+	.col-md-6 {
+		width: 50%;
+	}
+	.col-md-5 {
+		width: 41.662%;
+	}
+	.col-md-4 {
+		width: 33.332%;
+	}
+	.col-md-3 {
+		width: 25%;
+	}
+	.col-md-2 {
+		width: 16.662%;
+	}
+	.col-md-1 {
+		width: 8.3323%;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.col-lg-11 {
+		width: 91.662%;
+	}
+	.col-lg-10 {
+		width: 83.332%;
+	}
+	.col-lg-9 {
+		width: 75%;
+	}
+	.col-lg-8 {
+		width: 66.662%;
+	}
+	.col-lg-7 {
+		width: 58.331%;
+	}
+	.col-lg-6 {
+		width: 50%;
+	}
+	.col-lg-5 {
+		width: 41.662%;
+	}
+	.col-lg-4 {
+		width: 33.332%;
+	}
+	.col-lg-3 {
+		width: 25%;
+	}
+	.col-lg-2 {
+		width: 16.662%;
+	}
+	.col-lg-1 {
+		width: 8.3323%;
+	}
+}
+@media screen and (min-width: 1600px) {
+	.col-xl-3 {
+		width: 25%;
+	}
+}
+.con {
+	position: relative;
+	width: 75%;
+	overflow: hidden;
+	padding-top: 40%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.if {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+.align {
+	text-align: center;
+}
+.bar {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;
+	width: 50%;
+	height: 3px;
+}
+.footer-bar {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: blue;
+	width: 100%;
+	height: 3px;
+}
+.row:before,
+.row:after {
+	content: "";
+	display: table;
+}
+.row:after {
+	clear: both;
+}
+.row {
+	zoom: 1;
+}
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.round {
+	border: 10px solid blue;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto;
+	padding: 20px;
+	border: 10px solid blue;
+	width: 75%;
+}
+.close {
+	color: blue;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: underline;
+	cursor: pointer;
+}
+input,
+button {
+	border: none;
+}
+.column {
+	float: left;
+	width: 20%;
+	height: 300px;
+}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.block {
+	display: block;
+	width: 200px;
+	border: black;
+	background-color: blue;
+	color: white;
+	padding: 14px 28px;
+	font-size: 16px;
+	cursor: pointer;
+	text-align: center;
 }
 
-/*Style the tables*/
-.table-wrapper {
-  overflow: auto;
-  width: 100%;
+.block:hover {
+	background-color: #ddd;
+	color: black;
+}
+@font-face {
+	font-family: "Rubik";
+	src: url("../fonts/Rubik-VariableFont_wght.ttf") format("truetype");
 }
 
-table {
-  border-collapse: collapse;
-  width: 100%;
+@font-face {
+	font-family: "Varela Round";
+	src: url("../fonts/VarelaRound-Regular.ttf") format("truetype");
+}
+
+* {
+	font-family: "Varela Round", serif;
+	font-family: "Rubik", sans-serif;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 th {
-  text-align: center;
-  padding: 8px;
-}
-
-td {
-  text-align: center;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #F6F6F6;
-}
-/*end Style the tables*/
-
-/*Font properties for big titles and deco text*/
-title {
-  font-family: "Varela Round", cursive;
-  font-weight: normal;
-  font-size: 100px;
-  color: #312F2F;
-  text-decoration: none;
-}
-
-/*Font properties for h1 text*/
-h1 {
-  font-family: "Varela Round", serif;
-  font-weight:bold;
-  font-size: 30px;
-  color: #88A42C;
-}
-
-/*Font properties for h2 text*/
-h2 {
-  font-family: "Rubik", sans-serif;
-  font-weight: normal;
-  font-size: 30px;
-  color: #F29069;
-}
-
-/*Font properties for h3 text*/
-h3 {
-  font-family: "Rubik", sans-serif;
-  font-weight: normal;
-  font-size: 22px;
-  color: #88A42C;
-}
-
-/*Font properties for h4 text (its tiny)*/
-h4 {
-  font-family: "Rubik", sans-serif;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 13px;
-  color: #312F2F;
-  text-align: justify;
-}
-
-/*Font properties for h5 text (its tiny)*/
-h5 {
-  font-family: "Rubik", sans-serif;
-  font-weight: normal;
-  font-size: 13px;
-  color: #312F2F;
-  text-align: left;
-}
-
-/*Font properties for paragraph and links*/
-p, li {
-  font-family: "Rubik", sans-serif;
-  font-weight: normal;
-  font-size: 16px;
-  color: #312F2F;
-  text-align: justify;
-}
-
-/*Font properties for links*/
-a {
-  font-family: "Rubik", sans-serif;
-  font-weight: normal;
-  font-size: 16px;
-  color: #5D711E;
+	text-align: center;
+	padding: 8px;
 }
 
 /* Style the top navigation bar */
 .topnav {
-  background-color: #FF5757;
-  width: 100%;
-  text-align: left;
+	background-color: #ff5757;
+	width: 100%;
+	text-align: left;
 }
 
 /* Style the topnav links */
 .topnav a {
-  font-family: "Rubik", sans-serif;
-  color: #FFFFFF;
-  display: inline-block;
-  padding: 14px 16px;
-  margin: 0 auto;
-  text-decoration: none;
+	font-family: "Rubik", sans-serif;
+	color: #ffffff;
+	display: inline-block;
+	padding: 14px 16px;
+	margin: 0 auto;
+	text-decoration: none;
 }
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color: #88A42C;
-  color: #FFFFFF;
+	background-color: #88a42c;
+	color: #ffffff;
 }
 
 /* Style The Dropdown Button */
 .dropbtn {
-  background-color: #FF5757;
-  color: #FFFFFF;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+	background-color: #ff5757;
+	color: #ffffff;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-  position: relative;
-  display: inline-block;
+	position: relative;
+	display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #312F2F;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+	opacity: 0;
+	position: absolute;
+	background-color: #312f2f;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: #FFFFFF;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+	color: #ffffff;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
 }
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #ff7c7c;
+	background-color: #ff7c7c;
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-  display: block;
+	transition: opacity 3s;
+	opacity: 1;
 }
-
+.dropdown:not(:hover) .dropdown-content {
+	transition: opacity 2s;
+	opacity: 0;
+}
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #ff7c7c;
+.dropdown:hover + .dropbtn {
+	background-color: #ff7c7c;
 }
-
-/*Row for columns*/
-.row {
-  display: flex;
-}
-
-/*Column general*/
-.column {
-  background-color: #FFFFFF;
-  flex: 100%;
-  padding: 10px;
-}
-
-/*Column for profile description*/
-.column-left {
-  background-color: #FFFFFF;
-  flex: 70%;
-  padding: 10px;
-}
-
-/*Column for profile photo*/
-.column-right {
-  background-color: #FFFFFF;
-	flex: 30%;
-  padding: 10px;
-  height: 300px;
-}
-
-/*Avatar*/
-.avatar {
-  display: block;
-  border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-}
-
-/*Avatar Tiny*/
-.avatar-tiny {
-  border-radius: 50%;
-  width: 80px;
-  float: left;
-  margin: 20px;
-  padding: 10px;
-}
-
-/*Style the content*/
-.content {
-  width: 70%;
-  border: none;
-  padding: 50px;
-  margin: auto;
-  text-align: left;
-  flex: 1 0 auto;
-}
-
-/*Style the footer*/
-.footer {
-  flex-shrink: 0;
-  background: #312F2F;
-  height: 50px;
-  color: white;
-}
-
-/*Footer center*/
-.footer center {
-  margin: 15px;
- }
-
-/*Responsive Logo*/
-.responsive {
-  width:60%;
-  max-width: 100%;
-  height: auto;
-}
-
- iframe {
-   width: 560px;
-   height: 315px;
- }
-
- li {
-  word-wrap: break-word;
- }
-
- /* Responsive Styles */
- @media screen and (max-width: 720px) {
-  .content {
-    width: 100%;
-  }
-
-  h1, h2, h3, .a2-group-heading {
-    text-align: center;
-  }
-
-  img {
-    height: initial;
-    width: 100%;
-  }
-
-  iframe {
-    width: 100%;
-    height: 315px;
-  }
- }
