@@ -23,10 +23,46 @@
 		<!--Dropdown End-->
 	</div>
 	<!--Do not touch -->
-
 	<body>
 		<div class="row">
 			<img src="./resources/images/Budget Hub Logo.png" class="col-xs-5 align-im" />
 		</div>
+		<div>
+			<img src="resources/images/natural_food.jpg" class="slides" />
+			<img src="resources/images/sausage_ad.jpg" class="slides" alt="advertising image" />
+			<div class="thediv">
+				<button id="left" class="posleft">&larr;</button>
+				<button id="right" class="posright">&rarr;</button>
+			</div>
+		</div>
+		<script>
+			var index = 0;
+			var arr = document.getElementsByClassName("slides");
+			document.getElementById("left").addEventListener("click", function () {
+				index -= 1;
+				if (index >= arr.length) index = 0;
+				if (index < 0) index = arr.length - 1;
+				for (var i = 0; i < arr.length; i++) {
+					arr[i].style.display = "none";
+				}
+				arr[index].style.display = "block";
+			});
+			document.getElementById("right").addEventListener("click", function () {
+				index += 1;
+				if (index >= arr.length) index = 0;
+				if (index < 0) index = arr.length - 1;
+				for (var i = 0; i < arr.length; i++) {
+					arr[i].style.display = "none";
+				}
+				console.log(index);
+				arr[index].style.display = "block";
+			});
+			if (index >= arr.length) index = 0;
+			if (index < 0) index = arr.length;
+			for (var i = 0; i < arr.length; i++) {
+				arr[i].style.display = "none";
+			}
+			arr[index].style.display = "block";
+		</script>
 	</body>
 </html>

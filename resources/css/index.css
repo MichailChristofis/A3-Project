@@ -549,3 +549,23 @@ th {
 .dropdown:hover + .dropbtn {
 	background-color: #ff7c7c;
 }
+.slides {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.thediv {
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+.posleft {
+	float: left;
+	height: 30px;
+	width: 60px;
+}
+.posright {
+	float: right;
+	height: 30px;
+	width: 60px;
+}
