@@ -14,6 +14,24 @@ body {
 	background-repeat: no-repeat;
 	background-position: right bottom;
 }
+.circle {
+	margin-top: 10px;
+	border-radius: 50%;
+	height: 10px;
+	width: 10px;
+	border: 1px solid red;
+	margin-left: calc(50% - 100px);
+	float: left;
+}
+.circle1 {
+	margin-top: 10px;
+	border-radius: 50%;
+	height: 10px;
+	width: 10px;
+	border: 1px solid red;
+	margin-left: 5px;
+	float: left;
+}
 .pad {
 	padding: 10px;
 }

@@ -29,16 +29,84 @@
 			<img src="./resources/images/Budget Hub Logo.png" class="col-xs-5 align-im" />
 		</div>
 		<div>
-			<img src="resources/images/natural_food.jpg" class="slides" />
+			<img src="resources/images/natural_food.jpg" class="slides" alt="advertising image" />
 			<img src="resources/images/sausage_ad.jpg" class="slides" alt="advertising image" />
+			<img src="resources/images/20%.jpeg" class="slides" alt="advertising image" />
+			<img src="resources/images/otto-s-anatolian-food.jpg" class="slides" alt="advertising image" />
+			<img src="resources/images/food.jpg" class="slides" alt="advertising image" />
 			<div class="thediv">
 				<button id="left" class="posleft">&larr;</button>
+				<div class="circle hello" id="slide1"></div>
+				<div class="circle1 hello" id="slide2"></div>
+				<div class="circle1 hello" id="slide3"></div>
+				<div class="circle1 hello" id="slide4"></div>
+				<div class="circle1 hello" id="slide5"></div>
 				<button id="right" class="posright">&rarr;</button>
 			</div>
 		</div>
 		<script>
 			var index = 0;
 			var arr = document.getElementsByClassName("slides");
+			document.getElementById("slide1").addEventListener("click", function () {
+				index = 0;
+				for (var i = 0; i < arr.length; i++) {
+					arr[i].style.display = "none";
+				}
+				arr[index].style.display = "block";
+				yo = document.getElementsByClassName("hello");
+				for (var i = 0; i < yo.length; i++) {
+					yo[i].style.background = "white";
+				}
+				yo[index].style.background = "red";
+			});
+			document.getElementById("slide2").addEventListener("click", function () {
+				index = 1;
+				for (var i = 0; i < arr.length; i++) {
+					arr[i].style.display = "none";
+				}
+				arr[index].style.display = "block";
+				yo = document.getElementsByClassName("hello");
+				for (var i = 0; i < yo.length; i++) {
+					yo[i].style.background = "white";
+				}
+				yo[index].style.background = "red";
+			});
+			document.getElementById("slide3").addEventListener("click", function () {
+				index = 2;
+				for (var i = 0; i < arr.length; i++) {
+					arr[i].style.display = "none";
+				}
+				arr[index].style.display = "block";
+				yo = document.getElementsByClassName("hello");
+				for (var i = 0; i < yo.length; i++) {
+					yo[i].style.background = "white";
+				}
+				yo[index].style.background = "red";
+			});
+			document.getElementById("slide4").addEventListener("click", function () {
+				index = 3;
+				for (var i = 0; i < arr.length; i++) {
+					arr[i].style.display = "none";
+				}
+				arr[index].style.display = "block";
+				yo = document.getElementsByClassName("hello");
+				for (var i = 0; i < yo.length; i++) {
+					yo[i].style.background = "white";
+				}
+				yo[index].style.background = "red";
+			});
+			document.getElementById("slide5").addEventListener("click", function () {
+				index = 4;
+				for (var i = 0; i < arr.length; i++) {
+					arr[i].style.display = "none";
+				}
+				arr[index].style.display = "block";
+				yo = document.getElementsByClassName("hello");
+				for (var i = 0; i < yo.length; i++) {
+					yo[i].style.background = "white";
+				}
+				yo[index].style.background = "red";
+			});
 			document.getElementById("left").addEventListener("click", function () {
 				index -= 1;
 				if (index >= arr.length) index = 0;
@@ -47,6 +115,11 @@
 					arr[i].style.display = "none";
 				}
 				arr[index].style.display = "block";
+				yo = document.getElementsByClassName("hello");
+				for (var i = 0; i < yo.length; i++) {
+					yo[i].style.background = "white";
+				}
+				yo[index].style.background = "red";
 			});
 			document.getElementById("right").addEventListener("click", function () {
 				index += 1;
@@ -57,6 +130,11 @@
 				}
 				console.log(index);
 				arr[index].style.display = "block";
+				yo = document.getElementsByClassName("hello");
+				for (var i = 0; i < yo.length; i++) {
+					yo[i].style.background = "white";
+				}
+				yo[index].style.background = "red";
 			});
 			hi();
 			function hi() {
@@ -66,6 +144,11 @@
 					arr[i].style.display = "none";
 				}
 				arr[index].style.display = "block";
+				yo = document.getElementsByClassName("hello");
+				for (var i = 0; i < yo.length; i++) {
+					yo[i].style.background = "white";
+				}
+				yo[index].style.background = "red";
 				index += 1;
 				setTimeout(hi, 5000);
 			}
