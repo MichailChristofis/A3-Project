@@ -3,6 +3,7 @@
 	<head>
 		<link href="./resources/css/index.css" type="text/css" rel="stylesheet" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Hex Clan</title>
 	</head>
 
 	<!--Do not touch -->
@@ -57,12 +58,17 @@
 				console.log(index);
 				arr[index].style.display = "block";
 			});
-			if (index >= arr.length) index = 0;
-			if (index < 0) index = arr.length;
-			for (var i = 0; i < arr.length; i++) {
-				arr[i].style.display = "none";
+			hi();
+			function hi() {
+				if (index >= arr.length) index = 0;
+				if (index < 0) index = arr.length - 1;
+				for (var i = 0; i < arr.length; i++) {
+					arr[i].style.display = "none";
+				}
+				arr[index].style.display = "block";
+				index += 1;
+				setTimeout(hi, 5000);
 			}
-			arr[index].style.display = "block";
 		</script>
 	</body>
 </html>
