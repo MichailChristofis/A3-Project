@@ -599,3 +599,9 @@ th {
 .row {
 	zoom: 1;
 }
+.zoom {
+	transition: transform, 0.5s;
+}
+.zoom:hover {
+	transform: scale(1.2);
+}
