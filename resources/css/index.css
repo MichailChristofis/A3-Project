@@ -581,9 +581,17 @@ th {
 	float: left;
 	height: 30px;
 	width: 60px;
+	background-color: red;
 }
 .posright {
 	float: right;
 	height: 30px;
 	width: 60px;
+	background-color: red;
+}
+.posleft:hover {
+	background-color: blue;
+}
+.posright:hover {
+	background-color: blue;
 }
