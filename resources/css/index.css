@@ -23,6 +23,13 @@ body {
 	margin-left: calc(50% - 100px);
 	float: left;
 }
+.but {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	width: 80px;
+	height: 30px;
+}
 .circle1 {
 	margin-top: 10px;
 	border-radius: 50%;
@@ -604,4 +611,7 @@ th {
 }
 .zoom:hover {
 	transform: scale(1.2);
+}
+.but:hover {
+	background-color: orangered;
 }
