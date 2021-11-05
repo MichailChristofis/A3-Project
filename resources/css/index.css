@@ -491,7 +491,28 @@ th {
 	text-align: center;
 	padding: 8px;
 }
-
+.thehead {
+	color: #ff5757;
+	margin-left: 12.5%;
+}
+.theline {
+	background-color: #ff5757;
+	margin-left: 12.5%;
+	width: 75%;
+	height: 6px;
+}
+.thisdiv {
+	margin-left: 12.5%;
+	margin-right: 12.5%;
+}
+.thetext {
+	margin-left: 12.5%;
+	margin-right: 12.5%;
+	text-align: center;
+}
+.theimage {
+	display: block;
+}
 /* Style the top navigation bar */
 .topnav {
 	background-color: #ff5757;
