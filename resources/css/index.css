@@ -551,17 +551,24 @@ th {
 	position: relative;
 	display: inline-block;
 }
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-	opacity: 0;
+	display: none;
 	position: absolute;
 	background-color: #312f2f;
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	z-index: 1;
 }
-
 /* Links inside the dropdown */
 .dropdown-content a {
 	color: #ffffff;
@@ -577,12 +584,8 @@ th {
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-	transition: opacity 3s;
-	opacity: 1;
-}
-.dropdown:not(:hover) .dropdown-content {
-	transition: opacity 2s;
-	opacity: 0;
+	animation: fadein 3s;
+	display: block;
 }
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover + .dropbtn {
