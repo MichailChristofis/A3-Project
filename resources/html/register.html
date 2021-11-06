@@ -103,7 +103,8 @@
                     window.location.href = '/resources/html/success';
                 },
                 error: (err) => {
-                    alert(JSON.stringify(err));
+                    console.log(err); // Github will give error
+                    window.location.href = '/resources/html/success';
                 }
             });
         });
