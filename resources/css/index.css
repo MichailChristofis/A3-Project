@@ -23,6 +23,11 @@ body {
 	margin-left: calc(50% - 100px);
 	float: left;
 }
+.but1 {
+	width: 40px;
+	height: 30px;
+	background-color: #ff5757;
+}
 .but {
 	margin-left: auto;
 	margin-right: auto;
@@ -606,19 +611,19 @@ th {
 	float: left;
 	height: 30px;
 	width: 60px;
-	background-color: red;
+	background-color: #ff5757;
 }
 .posright {
 	float: right;
 	height: 30px;
 	width: 60px;
-	background-color: red;
+	background-color: #ff5757;
 }
 .posleft:hover {
-	background-color: blue;
+	background-color: red;
 }
 .posright:hover {
-	background-color: blue;
+	background-color: red;
 }
 .row:before,
 .row:after {
@@ -641,7 +646,9 @@ th {
 .but:hover {
 	background-color: orangered;
 }
-
+.but1:hover {
+	background-color: red;
+}
 /* Registration Form Overrides (fixes menu being clickable while hidden) */
 .dropdown-content-register {
 	visibility: hidden;
@@ -659,7 +666,7 @@ th {
 
 form label {
 	font-size: 12px;
-	color: #A9A9A9;
+	color: #a9a9a9;
 }
 
 .register-btn {
@@ -668,7 +675,7 @@ form label {
 }
 
 /* Register Link in Home nav */
-.topnav a.register-link  {
+.topnav a.register-link {
 	font-family: "Rubik", sans-serif;
 	color: #ffffff;
 	margin-top: 0.5em;
@@ -679,4 +686,3 @@ form label {
 	color: #ffffff;
 	background-color: transparent;
 }
-
