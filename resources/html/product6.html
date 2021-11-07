@@ -40,10 +40,21 @@
 				<br />
 				<br />
 				<br />
-				<input type="text" class="si" style="margin-right: 3%" />
-				<button class="but2" style="margin-right: 3%">Buy now</button>
-				<button class="but2">Add to cart</button>
+				<button class="but2" style="margin-right: 3%" id="buy">Buy now</button>
+				<button class="but2" id="add">Add to cart</button>
 			</div>
 		</div>
+		<script>
+			document.getElementById("buy").addEventListener("click", function () {
+				quant = document.getElementsByClassName("si")[0].value;
+				na = document.getElementsByClassName("title")[0].innerText;
+				alert("Thank you for purchasing " + String(quant) + " " + String(na));
+			});
+			document.getElementById("add").addEventListener("click", function () {
+				quant = document.getElementsByClassName("si")[0].value;
+				na = document.getElementsByClassName("title")[0].innerText;
+				alert("Thank you for adding to cart " + String(quant) + " " + String(na));
+			});
+		</script>
 	</body>
 </html>
