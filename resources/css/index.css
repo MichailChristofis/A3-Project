@@ -23,6 +23,17 @@ body {
 	margin-left: calc(50% - 100px);
 	float: left;
 }
+.si {
+	border: solid #ff5757;
+	width: 30px;
+	height: 30px;
+}
+.but2 {
+	width: 80px;
+	height: 30px;
+	border-radius: 10px;
+	background-color: #ff5757;
+}
 .but1 {
 	width: 40px;
 	height: 30px;
@@ -648,6 +659,9 @@ th {
 }
 .but1:hover {
 	background-color: red;
+}
+.but2:hover {
+	background-color: orangered;
 }
 /* Registration Form Overrides (fixes menu being clickable while hidden) */
 .dropdown-content-register {
