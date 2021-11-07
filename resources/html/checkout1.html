@@ -35,7 +35,7 @@
             Please input here all products which you plan on buying today. This way you can use this list as reference in the future.
             </textarea
 		>
-		<button class="but">Save</button>
+		<button class="but" id="the">Save</button>
 		<h2 class="align pad">Clunes IGA Supermarket</h2>
 		<div class="mapouter align-im pad">
 			<div class="gmap_canvas">
@@ -129,5 +129,10 @@
 				</style>
 			</div>
 		</div>
+		<script>
+			document.getElementById("the").addEventListener("click", function () {
+				alert("Thank you for trusting us with your shopping!");
+			});
+		</script>
 	</body>
 </html>
