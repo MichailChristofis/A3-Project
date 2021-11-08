@@ -20,7 +20,7 @@ body {
 	height: 10px;
 	width: 10px;
 	border: 1px solid red;
-	margin-left: calc(50% - 100px);
+	margin-left: calc(50% - 20px);
 	float: left;
 }
 .si {
