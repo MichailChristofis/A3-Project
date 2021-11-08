@@ -79,26 +79,26 @@ h3 {
 	display: block;
 	width: 100%;
 }
-.content {
+.hi-content {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 980px;
 }
-.display-left {
+.hi-display-left {
 	position: absolute;
 	top: 50%;
 	left: 0%;
 	transform: translate(0%, -50%);
 	-ms-transform: translate(-0%, -50%);
 }
-.display-right {
+.hi-display-right {
 	position: absolute;
 	top: 50%;
 	right: 0%;
 	transform: translate(0%, -50%);
 	-ms-transform: translate(0%, -50%);
 }
-.display-container {
+.hi-display-container {
 	position: relative;
 }
 .im1 {
