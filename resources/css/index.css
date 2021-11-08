@@ -79,6 +79,28 @@ h3 {
 	display: block;
 	width: 100%;
 }
+.content {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 980px;
+}
+.display-left {
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	transform: translate(0%, -50%);
+	-ms-transform: translate(-0%, -50%);
+}
+.display-right {
+	position: absolute;
+	top: 50%;
+	right: 0%;
+	transform: translate(0%, -50%);
+	-ms-transform: translate(0%, -50%);
+}
+.display-container {
+	position: relative;
+}
 .im1 {
 	display: block;
 }
@@ -619,15 +641,13 @@ th {
 	margin-right: 25%;
 }
 .posleft {
-	float: left;
 	height: 30px;
-	width: 60px;
+	width: 40px;
 	background-color: #ff5757;
 }
 .posright {
-	float: right;
 	height: 30px;
-	width: 60px;
+	width: 40px;
 	background-color: #ff5757;
 }
 .posleft:hover {
