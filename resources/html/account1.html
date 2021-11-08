@@ -45,50 +45,42 @@
 			<h1 class="title">Sign in</h1>
 			<div class="row">
 				<div class="col-1"></div>
-				<center>
-					<div class="col">
-						<form id="registrationForm">
-							<div class="form-group col-md-4 align">
-								<label for="email1">Email address</label>
-								<input
-									required="true"
-									type="email"
-									class="form-control"
-									id="email1"
-									aria-describedby="emailHelp"
-									placeholder="Email"
-								/>
-								<small id="emailHelp" class="form-text text-muted"
-									>We'll never share your email with anyone else.</small
-								>
-							</div>
-							<div class="form-group col-md-4 align">
-								<label for="password">Password</label>
-								<input
-									required="true"
-									type="password"
-									class="form-control"
-									id="password"
-									placeholder="Password"
-								/>
-							</div>
-							<div class="row">
-								<div class="col">
-									<div class="form-check col-md-4 align form-check form-switch">
-										<label class="form-check-label" for="flexSwitchCheckDefault">Notifications</label>
-										<input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
-									</div>
+				<div class="col">
+					<center>
+						<div class="form-group col-md-4 align">
+							<label for="email1">Email address</label>
+							<input
+								required="true"
+								type="email"
+								class="form-control"
+								id="email1"
+								aria-describedby="emailHelp"
+								placeholder="Email"
+							/>
+							<small id="emailHelp" class="form-text text-muted"
+								>We'll never share your email with anyone else.</small
+							>
+						</div>
+						<div class="form-group col-md-4 align">
+							<label for="password">Password</label>
+							<input required="true" type="password" class="form-control" id="password" placeholder="Password" />
+						</div>
+						<div class="row">
+							<div class="col">
+								<div class="form-group col-md-4 align form-check form-switch">
+									<label class="form-check-label" for="flexSwitchCheckDefault">Notifications</label>
+									<input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
 								</div>
 							</div>
-							<a href="register.html">Don't have an account?</a>
-							<div class="row">
-								<div class="col">
-									<button id="sub" class="btn btn-primary register-btn">Submit</button>
-								</div>
+						</div>
+						<a href="register.html">Don't have an account?</a>
+						<div class="row">
+							<div class="col">
+								<button id="sub" class="btn btn-primary register-btn">Submit</button>
 							</div>
-						</form>
-					</div>
-				</center>
+						</div>
+					</center>
+				</div>
 				<div class="col-1"></div>
 			</div>
 		</div>
@@ -102,10 +94,13 @@
 			let mult = BigInt(1);
 			for (let i = 0; i < input1.length; i++) {
 				let hi = BigInt(input1[i].charCodeAt(0));
+				console.log("HI");
+				console.log(hi);
 				hash += hi * mult;
 				hash %= mod;
 				mult *= BigInt(307);
 				mult %= mod;
+				console.log(hash);
 			}
 			for (let i = 0; i < input2.length; i++) {
 				let hi = BigInt(input2[i].charCodeAt(0));
@@ -113,9 +108,11 @@
 				hash %= mod;
 				mult *= BigInt(307);
 				mult %= mod;
+				console.log(hash);
 			}
 			if (hash == "12112017832") {
-				window.location.href = "https://stackabuse.com/javascript-how-to-redirect-to-another-webpage/";
+				//alert("HI");
+				window.location.href = "../html/statistics.html";
 			}
 		});
 	</script>
