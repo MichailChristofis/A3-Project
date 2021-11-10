@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href="../css/index.css" type="text/css" rel="stylesheet" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Hex Clan</title>
+	</head>
+	<!--Do not touch -->
+	<div class="topnav">
+		<!--Dropdown -->
+		<div class="dropdown">
+			<button class="dropbtn"><img src="../images/Hamburger_icon.svg" /></button>
+			<!--Dropdown Content-->
+			<div class="dropdown-content">
+				<a href="../../index.html">Home</a>
+				<a href="../html/shop_iga1.html">IGA</a>
+				<a href="../html/shop_foodland1.html">Townsville Local Providore</a>
+				<a href="../html/shop_local1.html">Seoul Mart</a>
+				<a href="../html/shop_woolworths1.html">Woolworths</a>
+				<a href="../html/general1.html">General</a>
+				<a href="../html/checkout1.html">Checkout</a>
+				<a href="../html/recipes1.html">Recipes</a>
+				<a href="../html/account1.html">Account</a>
+			</div>
+			<!--Dropdown Content End-->
+		</div>
+		<!--Dropdown End-->
+	</div>
+	<!--Do not touch -->
+
+	<body>
+		<img src="../images/Woolworths.png" style="width: 100%" />
+		<div class="title">Primo Chorizo 2 Pack</div>
+		<div class="row">
+			<img src="../images/383.jpg" class="col-xs-6 col zoom" />
+			<div class="col-xs-6 col" style="font-size: 30px">
+				<p>Price: $6.00</p>
+				<p>Available at Woolworths.</p>
+				<br />
+				<br />
+				<br />
+				<br />
+				<input type="text" class="si" style="margin-right: 3%" />
+				<button class="but2" style="margin-right: 3%" id="buy">Buy now</button>
+				<button class="but2" id="add">Add to cart</button>
+			</div>
+		</div>
+		<script>
+			document.getElementById("buy").addEventListener("click", function () {
+				quant = document.getElementsByClassName("si")[0].value;
+				na = document.getElementsByClassName("title")[0].innerText;
+				alert("Thank you for purchasing " + String(quant) + " " + String(na));
+			});
+			document.getElementById("add").addEventListener("click", function () {
+				quant = document.getElementsByClassName("si")[0].value;
+				na = document.getElementsByClassName("title")[0].innerText;
+				alert("Thank you for adding to cart " + String(quant) + " " + String(na));
+			});
+		</script>
+	</body>
+</html>
