@@ -623,7 +623,7 @@ th {
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-	animation: fadein 3s;
+	animation: fadein 1.9s;
 	display: block;
 }
 /* Change the background color of the dropdown button when the dropdown content is shown */
