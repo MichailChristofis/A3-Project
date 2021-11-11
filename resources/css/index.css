@@ -23,6 +23,16 @@ body {
 	margin-left: calc(50% - 20px);
 	float: left;
 }
+ul {
+	list-style: none;
+}
+ul li::before {
+	content: "\2022";
+	color: #ff5757;
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+}
 .si {
 	border: solid #ff5757;
 	width: 30px;
